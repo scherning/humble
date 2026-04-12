@@ -1,0 +1,15 @@
+{
+  "name": "humble",
+  "description": "Behavioral guardrails: no victory claims, take responsibility, pick correct solutions.",
+  "owner": {
+    "name": "Thomas Scherning"
+  },
+  "plugins": [
+    {
+      "name": "humble",
+      "description": "No victory claims before testing, take responsibility for issues, pick correct solutions over quick fixes.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

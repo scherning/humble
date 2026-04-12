@@ -1,0 +1,21 @@
+{
+  "name": "humble",
+  "description": "Behavioral guardrails: no victory claims before testing, take responsibility for issues, pick correct solutions over quick fixes.",
+  "author": {
+    "name": "Thomas Scherning"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/hooks/humble-activate.js",
+            "timeout": 5,
+            "statusMessage": "Loading humble mode..."
+          }
+        ]
+      }
+    ]
+  }
+}
