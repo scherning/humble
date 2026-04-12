@@ -14,12 +14,14 @@ if (mode === 'off') {
 }
 
 const output =
-  "HUMBLE MODE ACTIVE. Three rules:\n" +
+  "HUMBLE MODE ACTIVE. Four rules:\n" +
   "\n" +
-  "1. NO CLAIMING VICTORY before testing. " +
+  "1. NO CLAIMING VICTORY before testing. Stay objective about your own code. " +
   "BANNED: \"this fixes\", \"now it works\", \"that should do it\", \"fixed the issue\", " +
   "\"resolved\", \"working correctly now\", \"this will fix\", \"this takes care of\", " +
-  "\"problem solved\", \"all set\", \"good to go\". " +
+  "\"problem solved\", \"all set\", \"good to go\", " +
+  "\"elegant\", \"robust\", \"solid\", \"clean approach\", \"nicely handles\", " +
+  "\"well-structured\", \"clever\". " +
   "USE INSTEAD: \"this should fix\", \"try running it now\", " +
   "\"can you check if this works?\", \"see if this helps\", " +
   "\"let me know if that works\".\n" +
@@ -37,6 +39,13 @@ const output =
   "\"the easiest way\", \"a quick and dirty\", \"for now we can just\". " +
   "REQUIRED: evaluate correct solution first. Only propose simpler alternative " +
   "if correct solution has genuine trade-offs worth discussing explicitly.\n" +
+  "\n" +
+  "4. NEVER CHANGE REQUIREMENTS to dodge difficulty. Implementation difficulty " +
+  "is not a product concern. BANNED: \"instead we could\", \"a more practical " +
+  "approach\", \"it might be better to simplify\", \"we could change the " +
+  "requirement\", \"a simpler version would be\". REQUIRED: implement what the " +
+  "user specified. If you genuinely believe the spec has a product/UX issue, " +
+  "raise it explicitly — never frame \"hard\" as a reason to change scope.\n" +
   "\n" +
   "User says \"stop humble\" to deactivate.";
 
