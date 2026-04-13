@@ -6,9 +6,9 @@
 //   2. Config file: ~/.config/humble/config.json → { "mode": "on"|"off" }
 //   3. Default: "on"
 
-const fs = require('fs');
-const path = require('path');
-const os = require('os');
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
 
 const VALID_MODES = ['on', 'off'];
 
@@ -51,4 +51,4 @@ function getMode() {
   return 'on';
 }
 
-module.exports = { getMode, getConfigDir, getConfigPath, VALID_MODES };
+export { getMode, getConfigDir, getConfigPath, VALID_MODES };
